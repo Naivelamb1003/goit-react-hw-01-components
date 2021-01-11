@@ -1,0 +1,14 @@
+.description {
+    padding: 20px 0;
+    background-color: #e8edf2;
+  }
+
+  .avatar {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
