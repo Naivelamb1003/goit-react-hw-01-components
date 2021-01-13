@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-
+import s from './FriendListItem.module.css'
 const FriendListItem = ({avatar,name,isOnline,id}) => {
     return(
-        <li className="item" key={id}>
+        <li className={s.item} key={id}>
 
-            <span className = {isOnline ? 'statusOnline' : 'statusOfline'}></span>
-            <img className="avatar" src={avatar} alt="" width="48" />
-            <p className="name">{name}</p>
+            <span className = {isOnline ? s.statusOnline : s.statusOfline}></span>
+            <img className={s.avatar} src={avatar} alt="" width="48" />
+            <p className={s.name}>{name}</p>
         </li>
     )
 
@@ -16,7 +16,7 @@ const FriendListItem = ({avatar,name,isOnline,id}) => {
 FriendListItem.propTypes = {
     avatar: PropTypes.string,
     name: PropTypes.string,
-    isOnline: PropTypes.object,
+    isOnline: PropTypes.bool,
     
        };
   
